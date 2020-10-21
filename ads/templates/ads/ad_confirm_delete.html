@@ -1,0 +1,12 @@
+<head>
+    <meta name="dj4e" content="edea298442a67de045e88dfb6e5ea4a2">
+</head>
+{% extends "base_menu.html" %}
+{% block content %}
+<h1>Delete Ads</h1>
+<p>Are you sure you want to delete the ads: {{ ad }}?</p>
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Yes, delete.">
+</form>
+{% endblock %}
